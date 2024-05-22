@@ -1,0 +1,104 @@
+/* TabbedForm.css */
+
+.tab-header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 16px;
+}
+
+.tab-header button {
+    position: relative;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 4px;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-header button.active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.tab-header button.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.tab-header button:not(.active):hover {
+    background-color: #e9e9e9;
+}
+
+.tab-header .error-indicator {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 10px;
+    height: 10px;
+    background-color: #d9534f;
+    border-radius: 50%;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 0 4px 4px 4px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+input.error,
+select.error {
+    border-color: #d9534f;
+    background-color: #f8d7da;
+}
+
+p {
+    color: #d9534f;
+    margin-top: -12px;
+    margin-bottom: 16px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="button"] {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+button[type="button"]:hover {
+    background-color: #5a6268;
+}
